@@ -16,7 +16,7 @@ vim.g.python3_host_prog = vim.fn.expand '~/.local/share/mise/installs/python/3.1
 vim.g.ruby_host_prog = '~/.local/share/mise/installs/ruby/4.0.0/bin/ruby'
 
 -- If you don't need these, disable to silence health warnings:
--- vim.g.loaded_node_provider  = 0
+vim.g.loaded_node_provider  = 0
 vim.g.loaded_perl_provider = 0
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
@@ -84,7 +84,7 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 -- Only log errors in lsp logs
-vim.lsp.set_log_level(vim.log.levels.ERROR)
+vim.lsp.log.set_level(vim.log.levels.ERROR)
 
 -- Custom Settings
 require 'custom.settings'
