@@ -298,7 +298,7 @@
 
 | Key | Action |
 |-----|--------|
-| `<leader>u` | Toggle undo tree |
+| `<leader>U` | Toggle undo tree |
 
 > Navigate the tree with `j/k`, press `<CR>` to restore that state.
 

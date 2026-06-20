@@ -51,6 +51,7 @@ return {
       'vue',
       'regex',
       'latex',
+      'prisma',
     }
 
     -- ✅ Non-blocking ensure (don’t hang startup)

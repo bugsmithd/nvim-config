@@ -92,9 +92,13 @@ return {
   config = function(_, opts)
     require('snacks').setup(opts)
 
-    -- Command palette
+    -- Canonical workstation keys: <leader><leader> = files, <leader>sC = commands.
     vim.keymap.set('n', '<leader><leader>', function()
+      Snacks.picker.files()
+    end, { desc = 'Find Files (Root Dir)' })
+
+    vim.keymap.set('n', '<leader>sC', function()
       Snacks.picker.commands()
-    end, { desc = 'Commands (Snacks)' })
+    end, { desc = 'Commands' })
   end,
 }
